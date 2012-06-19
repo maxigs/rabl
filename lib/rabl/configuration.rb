@@ -4,11 +4,15 @@ begin
 rescue LoadError
 end
 
+# maxigs: commented out for now, since it is not compatible with the latest bson(_ext) gem
+#         if you have the latest bson(_ext) gem in you project (no matter if you need bson
+#         for rabl, rails wont start up)
+#
 # We load the bson library if it is available.
-begin
-  require 'bson'
-  rescue LoadError
-end
+#begin
+#  require 'bson'
+#  rescue LoadError
+#end
 
 # We load the plist library if it is available.
 begin
